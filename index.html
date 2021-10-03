@@ -9,29 +9,53 @@
         body {
             color: darkblue; /*for hex and add # or rgb add rgb{number, number, number*/
             background-color: lightgray; 
-            p (
-             font-size: 2vw; /*percent doesn't change with window size*/
-            )
-            
-            
-            }
-            
         }
+            p {
+             font-size: 2vw; /*percent doesn't change with window size*/
+            }
+            img {
+                width: 20%;
+            }
+            .logo {
+                width: 30vw;
+            }
+        .nav-container {
+            display: flex; /*anything inside will be in a flexible format*/
+            /* justify-content: center */
+        }
+        .item {
+            flex-grow: 1;
+            text-align: center;
+            list-style: none;
+            background-color: gray;
+        }
+        h1 {
+            transition: color 1s;
+        }
+        h1:hover {
+            color:forestgreen;
+        }
+            }
+        
     </style>
     </head>
     <body>
         <!-- comment -->
     <h1>Building website workshop</h1>
     <p>This is some text</p>
-        <ul>
+        <ul class="nav.container">
         <li><a href="about.html">About page</a></li>
         <li>Item 2</li>
+        <li class='item'>hola</li>
+        <li class='item'>hola</li>
+        <li class='item'>hola</li>
         </ul>
         <ol>
         <li>Item 1</li>
         <li>Item 2</li>
         </ol>
       <img src="soundgroup.png"/>
+        <img class="logo" src="soundgroup.png"/>
     <div>
        <h1>Div example</h1>    
         <p> A paragraph</p>
